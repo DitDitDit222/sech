@@ -5406,7 +5406,7 @@ function AutoFarmLevel()
                                                 game:service('VirtualInputManager'):SendKeyEvent(true, "V", false, game)
                                                 game:service('VirtualInputManager'):SendKeyEvent(false, "V", false, game)
                                             end
-
+                                            --[[
                                             spawn(function()
                                                 if posrandom <= 1 then
                                                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v
@@ -5430,7 +5430,7 @@ function AutoFarmLevel()
                                                         .HumanoidRootPart.CFrame * CFrame.new(0, 20, 0)
                                                     posrandom = 0
                                                 end
-                                            end)
+                                            end)]]
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, _G.Settings.Configs["Distance Auto Farm"], 0)
                                             FastAttack = true
                                             if game.Players.LocalPlayer.Data.Level.Value >= 20 and game.Players.LocalPlayer.Data.Level.Value <= 70 then
