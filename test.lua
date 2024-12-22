@@ -1,4 +1,4 @@
-(getgenv()).Key = "Admin-888-999"
+(getgenv()).Key = "Admin"
 
 local keys = {
      "SPEED-YUYOIP-UJUM9",
@@ -25,7 +25,7 @@ local counter = 1
 local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
-        keys = ""
+        keys = "Admin"
         game.Players.LocalPlayer:Kick("please enter your key")
     else
         if v == getgenv().Key then 
